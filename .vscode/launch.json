@@ -8,9 +8,10 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug Main",
-            "program": "${workspaceFolder}/StringMatching",
+            "program": "${workspaceFolder}/build/src/StringMatching",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "${defaultBuildTask}",
         }
     ]
 }

@@ -1,7 +1,7 @@
+file(GLOB SRC_FILES *.cpp)
 
-add_executable(${PROJECT_NAME} main.cpp)
+message(STATUS "SRC_FILES: ${SRC_FILES}")
 
-find_package(benchmark CONFIG REQUIRED)
-target_link_libraries(${PROJECT_NAME} PRIVATE benchmark::benchmark benchmark::benchmark_main)
+add_library(${PROJECT_NAME} ${SRC_FILES})
 
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic)

@@ -13,6 +13,16 @@
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "${defaultBuildTask}",
             "terminal": "integrated"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Benchmark",
+            "program": "${workspaceFolder}/build/benchmark/FastMatch_BENCH",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "${defaultBuildTask}",
+            "terminal": "integrated"
         }
     ]
 }
